@@ -40,6 +40,8 @@ tipo: 'mammifero',},
 
 //array dove andrano gli animali mammiferi
 const animaliMammiferi = [];
+
+//Array Degli Altri Animali
 const altri = [];
 
 
