@@ -51,20 +51,18 @@ const nonGuidatori=[]
 
 //console.log(Persone)
 
-
-//Ciclo
 for(let i = 0 ; i < Persone.length; i++){
 
 const People = Persone[i];
 
 if(People.Età>= 18 ){
 
-    Persone.Info =['Può Guidare']
+    Guidatori.push(People)
     
     
 
 }else{
-    Persone.info=['Non può guidare']
+    nonGuidatori.push(People)
     
     
 }
