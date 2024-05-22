@@ -6,7 +6,7 @@ const persone = [
     { Nome: 'Federico', Cognome: 'Nicosia', eta: 19 },
     { Nome: 'Samuele', Cognome: 'Canella', eta: 19 },
     { Nome: 'Desirè', Cognome: 'Mirenna', eta: 15 },
-    { Nome: 'Luca', Cognome: 'Porto', eta: 17 }
+    { Nome: 'Luca', Cognome: 'Porto', eta: 17 },
 ];
 
 // Array di destinazione
