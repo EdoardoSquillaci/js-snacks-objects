@@ -31,7 +31,7 @@ listaPersone.push(people)
 }else{
 
     //medesima cosa qui
-    people.info = 'non può guiare'
+    people.info = 'non può guidare'
     listaPersone.push(people)
 }
 
