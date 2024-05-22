@@ -1,74 +1,40 @@
 'use strict'
 
-//oggetti
+// Oggetti
+const persone = [
+    { Nome: 'Edoardo', Cognome: 'Squillaci', eta: 20 },
+    { Nome: 'Federico', Cognome: 'Nicosia', eta: 19 },
+    { Nome: 'Samuele', Cognome: 'Canella', eta: 19 },
+    { Nome: 'Desirè', Cognome: 'Mirenna', eta: 15 },
+    { Nome: 'Luca', Cognome: 'Porto', eta: 17 }
+];
 
-const Persone=[
-
-{
-Nome: 'Edoardo',
-Cognome: 'Squillaci',
-Età: '20',
-
-},
-
-
-
-{
- Nome: 'Federio',
- Cognome: 'Nicosia',
- Età: '19',
- 
-},
-
-{
-Nome: 'Samuele',
-Cognome: 'Canella',
-Età: '19',
-
-},
+// Array di destinazione
+const listaPersone = [];
 
 
-{
-Nome: 'Desirè',
-Cognome: 'Mirenna',
-Età: '15',
 
-},
+// Iterazione sull'array delle persone
+
+for (let i = 0; i < persone.length ; i++){
 
 
-{
-Nome: 'Luca',
-Cognome: 'Porto',
-Età: '17',
+//variabile che corrisponde all'array con gli oggetti    
+const people = persone[i];
 
-},
-]
+if (people.eta >= 18){
 
-//Array Distinti
-const Guidatori =[];
-const nonGuidatori=[]
-
-
-//console.log(Persone)
-
-for(let i = 0 ; i < Persone.length; i++){
-
-const People = Persone[i];
-
-if(People.Età>= 18 ){
-
-    Guidatori.push(People)
-    
-    
+// per i maggiori, aggiungo a people la info e quindi pusho tutto all'interno di lista persone    
+people.info = 'può guidare';
+listaPersone.push(people)
 
 }else{
-    nonGuidatori.push(People)
-    
-    
+
+    //medesima cosa qui
+    people.info = 'non può guiare'
+    listaPersone.push(people)
 }
 
 }
 
-
-console.log(Guidatori);
-console.log(nonGuidatori);
+console.log(listaPersone)
